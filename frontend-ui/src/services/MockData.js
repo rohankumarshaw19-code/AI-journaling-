@@ -16,3 +16,12 @@ export const mockSingleAIResponse = {
     { keyword: "code" }
   ]
 };
+export const mockWeeklyData = [
+  { day: "Mon", moodScore: 4, stressLevel: 65, primaryEmotion: "Anxious" },
+  { day: "Tue", moodScore: 6, stressLevel: 45, primaryEmotion: "Neutral" },
+  { day: "Wed", moodScore: 8, stressLevel: 30, primaryEmotion: "Productive" },
+  { day: "Thu", moodScore: 5, stressLevel: 55, primaryEmotion: "Tired" },
+  { day: "Fri", moodScore: 9, stressLevel: 20, primaryEmotion: "Motivated" },
+  { day: "Sat", moodScore: 8, stressLevel: 15, primaryEmotion: "Relaxed" },
+  { day: "Sun", moodScore: 7, stressLevel: 25, primaryEmotion: "Calm" }
+];

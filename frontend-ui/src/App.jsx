@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import JournalInputView from './views/JournalInputView';
+import DashboardView from './views/DashboardView';
 
 function DashboardViewPlaceholder() {
   return (
@@ -26,7 +27,7 @@ function HistoryViewPlaceholder() {
 }
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('journal');
+  const [activeTab, setActiveTab] = useState('dashboard');
 
   return (
     <div className="min-h-screen bg-slate-50 text-gray-900 antialiased flex flex-col">
@@ -72,7 +73,7 @@ export default function App() {
         <main className="ml-64 p-8 w-full min-h-[calc(100vh-4rem)]">
           <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm min-h-[75vh]">
             {activeTab === 'journal' && <JournalInputView />}
-            {activeTab === 'dashboard' && <DashboardViewPlaceholder />}
+            {activeTab === 'dashboard' && <DashboardView />}
             {activeTab === 'history' && <HistoryViewPlaceholder />}
           </div>
         </main>
@@ -81,3 +82,4 @@ export default function App() {
     </div>
   );
 }
+
